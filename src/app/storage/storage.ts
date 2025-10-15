@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { StorageService } from '../services/storage.service';
+import { NgIf } from "../../../node_modules/@angular/common/common_module.d";
 
 @Component({
   selector: 'app-storage',
   templateUrl: './storage.html',
-  styleUrl: './storage.css'
+  styleUrl: './storage.css',
 })
 export class Storage implements OnInit {
   items: string[] = [];

@@ -5,4 +5,13 @@
         <input [(ngModel)]="newItem" placeholder="Add new item" />
         <button (click)="addItem()">Add</button>
     </div>
+
+    <ul>
+        <li *ngFor="let item of items; let i = index">
+            {{item}}
+            <button (click)="removeItem(i)">Remove</button>
+        </li>
+    </ul>
+
+    <button *ngIf="items.length" (click)="clearItems()">Hapus Semua</button>
 </div>
