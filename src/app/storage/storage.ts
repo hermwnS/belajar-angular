@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { StorageService } from '../services/storage.service';
-import { NgIf } from "../../../node_modules/@angular/common/common_module.d";
 
 @Component({
   selector: 'app-storage',
@@ -8,6 +7,7 @@ import { NgIf } from "../../../node_modules/@angular/common/common_module.d";
   styleUrl: './storage.css',
 })
 export class Storage implements OnInit {
+
   items: string[] = [];
   newItem: string = '';
 
